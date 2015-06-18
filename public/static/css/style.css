@@ -1,5 +1,9 @@
-h1 {
-  font-size: 4em;
-  color: #f00;
+body {
   font-family: 'Cutive Mono';
+}
+h1 {
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
 }
