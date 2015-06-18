@@ -13,6 +13,7 @@ a {
 }
 section.video iframe {
   width: 100%;
+  height: 290px;
 }
 section.video article {
   margin-bottom: 20px;
