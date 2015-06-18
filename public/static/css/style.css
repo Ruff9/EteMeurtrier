@@ -1,15 +1,27 @@
 body {
   font-family: 'Cutive Mono';
+  background-color: #fff;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: #fff;
 }
 header {
   padding-bottom: 30px;
+  text-align: center;
 }
 h1 {
   font-size: 1em;
   color: #000;
+  font-weight: inherit;
+  margin: 0;
+  text-align: center;
+  margin-top: 30px;
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 section.video iframe {
   width: 100%;
@@ -17,4 +29,44 @@ section.video iframe {
 }
 section.video article {
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 38em) {
+  .container {
+    padding: 20px;
+    width: 1100px;
+  }
+  header {
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+  }
+  header a.menu {
+    float: right;
+    margin-left: 20px;
+  }
+  header h1 {
+    float: left;
+    text-align: left;
+    margin-top: 0;
+  }
+  header p {
+    float: left;
+    padding-left: 20px;
+    margin: 0;
+  }
+  section.video {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  section.video iframe {
+    width: 800px;
+    height: 450px;
+    float: left;
+  }
+  section.video article {
+    width: 250px;
+    float: left;
+    margin-left: 40px;
+  }
 }
