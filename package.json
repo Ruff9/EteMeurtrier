@@ -1,0 +1,10 @@
+{
+  "name": "etemeurtrier",
+  "version": "1.0.0",
+  "description": "Site du collectif Eté meurtrier",
+  "author": "Rémy Maucourt",
+  "dependencies": {
+    "express": "^4.12.4",
+    "stylus": "^0.51.1"
+  }
+}
