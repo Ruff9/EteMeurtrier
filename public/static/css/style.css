@@ -1,9 +1,19 @@
 body {
   font-family: 'Cutive Mono';
 }
+header {
+  padding-bottom: 30px;
+}
 h1 {
-  font-size: 2em;
+  font-size: 1em;
+  color: #000;
 }
 a {
   text-decoration: none;
+}
+section.video iframe {
+  width: 100%;
+}
+section.video article {
+  margin-bottom: 20px;
 }

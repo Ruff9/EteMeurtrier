@@ -27,6 +27,14 @@ app.get('/', function(req, res){
   render_page('home', res);
 });
 
+app.get('/about', function(req, res){
+  render_page('about', res);
+});
+
+app.get('/contact', function(req, res){
+  render_page('contact', res);
+});
+
 var server = app.listen(process.env.PORT || 3000, function () {
   var host = server.address().address;
   var port = server.address().port;
