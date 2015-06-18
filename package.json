@@ -4,6 +4,7 @@
   "description": "Site du collectif Eté meurtrier",
   "author": "Rémy Maucourt",
   "dependencies": {
+    "ejs": "^2.3.1",
     "express": "^4.12.4",
     "stylus": "^0.51.1"
   }
