@@ -13,6 +13,8 @@ body
 header
 	padding-bottom 30px
 	text-align center
+	#bouton_contact
+		cursor pointer
 
 h1
 	font-size 1em
@@ -22,10 +24,6 @@ h1
 	text-align center
 	margin-top 30px
 
-a
-	text-decoration none
-	color black
-
 section.video
 	margin-top 50px
 	iframe
@@ -33,6 +31,15 @@ section.video
 		height 290px
 	article
 		margin-bottom 20px
+		
+a
+	text-decoration none
+		
+#contact 
+	display none
+	padding 10px
+	position relative
+	margin-bottom -90px
 
 @media only screen and (min-width: 38em)
 
@@ -47,7 +54,8 @@ section.video
 		position fixed
 		top 0px
 		background-color white
-		a.menu
+		#bouton_contact
+			cursor pointer
 			float right
 			margin-left 20px
 		h1
@@ -78,5 +86,11 @@ section.video
 			p:first-of-type
 				margin-top 0
 				margin-bottom 90px
-				
+	
+	#contact
+		padding 10px
+		position fixed
+		top 60px
+		right 50px
+		background-color white
 

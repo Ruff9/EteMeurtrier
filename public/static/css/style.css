@@ -14,6 +14,9 @@ header {
   padding-bottom: 30px;
   text-align: center;
 }
+header #bouton_contact {
+  cursor: pointer;
+}
 h1 {
   font-size: 1em;
   color: #000;
@@ -21,10 +24,6 @@ h1 {
   margin: 0;
   text-align: center;
   margin-top: 30px;
-}
-a {
-  text-decoration: none;
-  color: #000;
 }
 section.video {
   margin-top: 50px;
@@ -35,6 +34,15 @@ section.video iframe {
 }
 section.video article {
   margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+#contact {
+  display: none;
+  padding: 10px;
+  position: relative;
+  margin-bottom: -90px;
 }
 @media only screen and (min-width: 38em) {
   .container {
@@ -49,7 +57,8 @@ section.video article {
     top: 0px;
     background-color: #fff;
   }
-  header a.menu {
+  header #bouton_contact {
+    cursor: pointer;
     float: right;
     margin-left: 20px;
   }
@@ -87,5 +96,12 @@ section.video article {
   section.video article p:first-of-type {
     margin-top: 0;
     margin-bottom: 90px;
+  }
+  #contact {
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    right: 50px;
+    background-color: #fff;
   }
 }
