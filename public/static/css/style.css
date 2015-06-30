@@ -7,7 +7,7 @@ body {
   margin: auto;
   background-color: #fff;
 }
-.home-wrapper {
+.wrapper {
   padding-top: 65px;
 }
 header {
@@ -25,6 +25,9 @@ h1 {
 a {
   text-decoration: none;
   color: #000;
+}
+section.video {
+  margin-top: 50px;
 }
 section.video iframe {
   width: 100%;
@@ -57,12 +60,16 @@ section.video article {
   }
   header p {
     float: left;
-    padding-left: 20px;
+    padding-left: 70px;
     margin: 0;
   }
   section.video {
     display: inline-block;
     margin-bottom: 30px;
+    margin-top: 120px;
+  }
+  section.video:first-of-type {
+    margin-top: 90px;
   }
   section.video iframe {
     width: 800px;
@@ -73,5 +80,9 @@ section.video article {
     width: 250px;
     float: left;
     margin-left: 40px;
+  }
+  section.video article p:first-of-type {
+    margin-top: 0;
+    margin-bottom: 90px;
   }
 }
