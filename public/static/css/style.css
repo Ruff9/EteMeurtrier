@@ -71,6 +71,9 @@ section.video article {
   section.video:first-of-type {
     margin-top: 90px;
   }
+  section.video:last-of-type {
+    margin-bottom: 100px;
+  }
   section.video iframe {
     width: 800px;
     height: 450px;
