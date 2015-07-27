@@ -1,0 +1,18 @@
+CREATE TABLE Video (
+id INT(11) NOT NULL AUTO_INCREMENT,
+titre VARCHAR(255) NOT NULL,
+code_embed TEXT,
+realisation1 VARCHAR(255),
+realisation2 VARCHAR(255),
+chef_operateur VARCHAR(255),
+avec1 VARCHAR(255),
+avec2 VARCHAR(255),
+annee VARCHAR(255),
+PRIMARY KEY(id)
+);
+
+INSERT INTO Video(titre, code_embed ,realisation1) VALUES
+	('Bob à la plage',
+	'<iframe width="560" height="315" src="https://www.youtube.com/embed/LfgSEwjAeno" frameborder="0" allowfullscreen></iframe>',
+	'Bobby'
+	);

@@ -8,29 +8,25 @@
 
 <section class="wrapper">
 
-	<section class="video">
-		<iframe src="https://player.vimeo.com/video/72976790" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<% if (data.length) { %>
 
-		<article>
-			<p>BRYCE HACKFORD - LEFT</p>
-			<p>RÉALISATION</br>Lilian Hardouineau, Antonin Mesnil</p>
-			<p>CHEF OPÉRATEUR</br>Jean-Michel Poulichot</p>
-			<p>Avec</br>Mélanie Badal,</br>Théo Cholbi</p>
-			<p>2015</p>
-		</article>
-	</section>
+		<% for(var i = 0;i < data.length;i++) { %>
 
-	<section class="video">
-		<iframe src="https://player.vimeo.com/video/89094029" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<section class="video">
+				<%- data[i].code_embed %>
 
-		<article>
-			<p>BRYCE HACKFORD - LEFT</p>
-			<p>RÉALISATION</br>Lilian Hardouineau, Antonin Mesnil</p>
-			<p>CHEF OPÉRATEUR</br>Jean-Michel Poulichot</p>
-			<p>Avec</br>Mélanie Badal,</br>Théo Cholbi</p>
-			<p>2015</p>
-		</article>
-	</section>
+				<article>
+					<p><%= data[i].titre %></p>
+					<p>RÉALISATION</br><%= data[i].realisation1 %></p>
+					<p>CHEF OPÉRATEUR</br><%= data[i].chef_operateur %></p>
+					<p>Avec</br><%= data[i].avec1 %>,</br><%= data[i].avec2 %></p>
+					<p><%= data[i].annee %></p>
+				</article>
+			</section>
+
+		<% } %>
+
+	<% } %>
 
 </section>
 
