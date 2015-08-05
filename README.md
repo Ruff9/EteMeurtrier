@@ -1,3 +1,3 @@
-#Été meurtrier 
+#Ete Meurtier
 
-Site web du collectif Été meurtrier, réalisé avec Express et Stylus. 
+Rails switch
