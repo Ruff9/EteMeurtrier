@@ -2,13 +2,30 @@
 <html>
 <head>
   <title>Etemeurtrier</title>
+	<meta content="True" name="HandheldFriendly">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
+<%= render 'layouts/header' %>
+
+<section id="contact">
+	<p>Eté Meurtrier is launched in 2014</br>by Antonin Mesnil & Lilian Hardouineau.</p>
+	<p>We work for art, music</br>and immersive projects.</p></br>
+	<p>etemeurtrier@contact.fr</p>
+</section>
+
+<section class="wrapper">
+
 <%= yield %>
+
+</section>
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
