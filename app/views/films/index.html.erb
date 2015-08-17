@@ -6,8 +6,16 @@
 		<article>
 			<p><%= film.titre %></p>
 			<p>RÉALISATION</br><%= film.realisateur1 %></p>
-			<p>CHEF OPÉRATEUR</br><%= film.chef_operateur %></p>
-			<p>Avec</br><%= film.avec1 %>,</br><%= film.avec2 %></p>
+			<% if film.chef_operateur? %>
+				<p>CHEF OPÉRATEUR</br><%= film.chef_operateur %></p>
+			<% end %>
+			<% if film.avec1? %>
+				<p>Avec</br><%= film.avec1 %>
+				<% if film.avec2? %>
+					,</br><%= film.avec2 %>
+				<% end %>
+				</p>
+			<% end %>
 			<p><%= film.annee %></p>
 		</article>
 	</section>
