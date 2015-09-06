@@ -32,13 +32,30 @@ h1 {
 
 section.video {
 	margin-top: 50px;
-	iframe {
-		width: 100%;
-		height: 290px;
+
+	.popup_launcher {
+		position: relative;
+		&::after {
+			content: '';
+			background-image: url('playlight.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			right: 230px;
+			top: -150px;
+		}
+		img {
+			width: 100%;
+			height: 290px;
+		}
 	}
+
 	article {
 		margin-bottom: 20px;
 	}
+
 }
 		
 a {
@@ -93,11 +110,19 @@ a {
 		&:last-of-type {
 			margin-bottom: 100px;
 		}
-		iframe {
-			width: 800px;
-			height: 450px;
+		.popup_launcher {
 			float: left;
+			&::after {
+				right: 360px;
+				top: 200px;
+			}
+			img {
+				width: 800px;
+				height: 450px;
+				float: left;
+			}
 		}
+
 		article {
 			width: 250px;
 			float: left;

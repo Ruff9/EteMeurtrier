@@ -6,4 +6,7 @@ $(function(){
   $('.wrapper').click(function() {
   	$('#contact').hide();
   });
+
+  $('.popup_launcher').magnificPopup({type:'iframe'});
+
 })

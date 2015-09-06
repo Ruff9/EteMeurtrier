@@ -1,7 +1,9 @@
 <% @films.each do |film| %>
 
 	<section class="video">
-		<%= film.code_embed.html_safe %>
+		<a href=<%= film.video_url %> class='popup_launcher'>
+			<%= image_tag film.image.url %>
+		</a>
 
 		<article>
 			<p><%= film.titre %></p>
@@ -15,6 +17,7 @@
 			<% end %>
 			<p><%= film.annee %></p>
 		</article>
+
 	</section>
 
 <% end %>
