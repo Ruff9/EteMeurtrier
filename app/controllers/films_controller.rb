@@ -12,6 +12,6 @@ class FilmsController < ApplicationController
 	private
 
   def film_params
-    params.require(:film).permit(:titre, :code_embed, :realisateur1, :realisateur2, :chef_operateur, :avec1, :avec2, :annee)
+    params.require(:film).permit(:titre, :code_embed, :realisateur1, :realisateur2, :chef_operateur, :avec1, :avec2, :annee, :image)
   end
 end
