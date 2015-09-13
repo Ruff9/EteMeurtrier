@@ -10,6 +10,7 @@ ActiveAdmin.register Film do
 	    f.input :titre
 	    f.input :image, :as => :file
 	    f.input :video_url
+	    f.input :description
 	    f.input :realisateur1
 	    f.input :realisateur2
 	    f.input :chef_operateur
