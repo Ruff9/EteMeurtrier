@@ -11,12 +11,6 @@ ActiveAdmin.register Film do
 	    f.input :image, :as => :file
 	    f.input :video_url
 	    f.input :description
-	    f.input :realisateur1
-	    f.input :realisateur2
-	    f.input :chef_operateur
-	    f.input :avec1
-	    f.input :avec2
-	    f.input :annee
 	  end
 	 	f.actions
  end
