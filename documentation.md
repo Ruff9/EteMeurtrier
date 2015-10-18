@@ -1,5 +1,8 @@
 déploiement git
 
+A FAIRE AVANT
+rake assets:precompile
+
 git status
 	(voir les modifs)
 git add . 
