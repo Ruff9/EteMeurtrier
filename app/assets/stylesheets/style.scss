@@ -1,14 +1,26 @@
 @import "variables";
 
 @font-face {
-  font-family: 'Times-NR';
-  src: url('Times-NR-Condensed.ttf') format('truetype');
+  font-family: 'TimesNRCondensed';
+  src: 	url('TimesNRCondensed.eot?#iefix') format('embedded-opentype'),  
+  			url('TimesNRCondensed.woff') format('woff'), 
+  			url('TimesNRCondensed.ttf')  format('truetype'), 
+  			url('TimesNRCondensed.svg#TimesNRCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FunctionBook';
+  src: 	url('FunctionBook.eot?#iefix') format('embedded-opentype'),
+  			url('FunctionBook.woff') format('woff'),
+  			url('FunctionBook.ttf')  format('truetype'),
+  			url('FunctionBook.svg#FunctionBook') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-	font-family: 'Times-NR';
 	background-color: $body_background;
 	color: $font_color;
 }
@@ -28,6 +40,7 @@ a {
 }
 
 header {
+	font-family: 'TimesNRCondensed';
 	font-size: $header_font_size;
 	padding-bottom: 30px;
 	text-align: center;
@@ -46,6 +59,7 @@ h1 {
 
 section.video {
 	margin-top: 50px;
+	font-family: 'FunctionBook';
 
 	.popup_launcher {
 		position: relative;
