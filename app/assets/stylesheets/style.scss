@@ -20,7 +20,7 @@ a {
 .container {
 	max-width: 1100px;
 	margin: auto;
-	background-color: white;
+	background-color: $body_background;
 }
 	
 .wrapper {
@@ -125,7 +125,7 @@ a {
 		position: fixed;
 		top: 60px;
 		right: 50px;
-		background-color: white;
+		background-color: $body_background;
 	}
 
 }
