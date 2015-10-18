@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
   font-family: 'Times-NR';
   src: url('Times-NR-Condensed.ttf') format('truetype');
@@ -7,11 +9,12 @@
 
 body {
 	font-family: 'Times-NR';
-	background-color: white;
+	background-color: $body_background;
+	color: $font_color;
 }
 
 a {
-	color: black;
+	color: $font_color;
 }
 
 .container {
@@ -25,6 +28,7 @@ a {
 }
 
 header {
+	font-size: $header_font_size;
 	padding-bottom: 30px;
 	text-align: center;
 	#bouton_contact {
@@ -34,7 +38,6 @@ header {
 
 h1 {
 	font-size: 1em;
-	color: black;
 	font-weight: inherit;
 	margin: 0;
 	text-align: center;
@@ -46,24 +49,27 @@ section.video {
 
 	.popup_launcher {
 		position: relative;
-		&::after {
-			content: '';
-			background-image: url('playlight.png');
-			background-size: contain;
-			background-repeat: no-repeat;
-			height: 50px;
-			width: 50px;
-			position: absolute;
-			right: 230px;
-			top: -150px;
-		}
+
+		// "bouton lecture"
+
+		// &::after {
+		// 	content: '';
+		// 	background-image: url('playlight.png');
+		// 	background-size: contain;
+		// 	background-repeat: no-repeat;
+		// 	height: 50px;
+		// 	width: 50px;
+		// 	position: absolute;
+		// 	right: 230px;
+		// 	top: -150px;
+		// }
 		img {
 			width: 100%;
-			height: 290px;
 		}
 	}
 
 	article {
+		font-size: $body_font_size;
 		margin-bottom: 20px;
 	}
 
@@ -79,16 +85,20 @@ a {
 	margin-bottom: -90px;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 810px) {
 
 	.container {
-		width: 1100px;
+		width: $wrapper_width;
+	}
+
+	.header-wrapper {
+		// TODO
 	}
 
 	header {
 		display: inline-block;
 		padding: 20px 0;
-		width: 1100px;
+		width: $header_width;
 		text-align: left;;
 		position: fixed;
 		top: 0px;
@@ -107,40 +117,6 @@ a {
 			float: left;
 			padding-left: 70px;
 			margin: 0;
-		}
-	}
-	
-	section.video {
-		display: inline-block;
-		margin-bottom: 30px;
-		margin-top: 120px;
-		&:first-of-type {
-			margin-top: 90px;
-		}
-		&:last-of-type {
-			margin-bottom: 100px;
-		}
-		.popup_launcher {
-			float: left;
-			&::after {
-				right: 360px;
-				top: 200px;
-			}
-			img {
-				width: 800px;
-				height: 450px;
-				float: left;
-			}
-		}
-
-		article {
-			width: 250px;
-			float: left;
-			margin-left: 40px;
-			p:first-of-type {
-				margin-top: 0;
-				margin-bottom: 90px;
-			}
 		}
 	}
 	

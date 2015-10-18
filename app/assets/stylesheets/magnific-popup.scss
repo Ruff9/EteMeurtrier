@@ -1,3 +1,5 @@
+@import "variables";
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -8,7 +10,7 @@
   overflow: hidden;
   position: fixed;
   background: #0b0b0b;
-  opacity: 0.8;
+  opacity: $popup_background_opacity; /*custom pour antonin etemeurtrier*/
   filter: alpha(opacity=80); }
 
 .mfp-wrap {
@@ -219,7 +221,7 @@ button::-moz-focus-inner {
   .mfp-iframe-holder .mfp-content {
     line-height: 0;
     width: 100%;
-    max-width: 1100px; /*custom*/
+    max-width: $wrapper_width; /*custom pour antonin etemeurtrier*/
   }
   .mfp-iframe-holder .mfp-close {
     top: -40px; }
