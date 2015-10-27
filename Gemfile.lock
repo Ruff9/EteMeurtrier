@@ -57,12 +57,11 @@ GEM
     arbre (1.0.3)
       activesupport (>= 3.0.0)
     arel (6.0.3)
-    aws-sdk (2.1.32)
-      aws-sdk-resources (= 2.1.32)
-    aws-sdk-core (2.1.32)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.1.32)
-      aws-sdk-core (= 2.1.32)
+    aws-sdk (1.66.0)
+      aws-sdk-v1 (= 1.66.0)
+    aws-sdk-v1 (1.66.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -111,7 +110,6 @@ GEM
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
-    jmespath (1.1.3)
     jquery-rails (4.0.4)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
@@ -224,7 +222,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
-  aws-sdk
+  aws-sdk (< 2.0)
   byebug
   coffee-rails (~> 4.1.0)
   devise

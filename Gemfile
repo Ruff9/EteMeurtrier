@@ -6,7 +6,7 @@ gem 'pg'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
