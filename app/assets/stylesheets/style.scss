@@ -25,7 +25,22 @@ body {
 	color: $font_color;
 }
 
+
+h1 {
+	font-size: 1em;
+	font-weight: inherit;
+	margin: 0;
+	text-align: center;
+	margin-top: 30px;
+}
+
+h2 {
+	text-align: center;
+	font-size: $titre_film_font_size;
+}
+
 a {
+	text-decoration: none;
 	color: $font_color;
 }
 
@@ -47,18 +62,6 @@ header {
 	#bouton_contact {
 		cursor: pointer;
 	}
-}
-
-h1 {
-	font-size: 1em;
-	font-weight: inherit;
-	margin: 0;
-	text-align: center;
-	margin-top: 30px;
-}
-
-h2 {
-	text-align: center;
 }
 
 section.video {
@@ -85,17 +88,17 @@ section.video {
 			width: 100%;
 		}
 	}
+	.play {
+		text-align: center;
+		font-size: $play_font_size;
+	}
 
 	article {
-		font-size: $body_font_size;
+		font-size: $description_font_size;
 		margin-bottom: 20px;
 		text-align: center;
 	}
 
-}
-		
-a {
-	text-decoration: none;
 }
 		
 #contact {
