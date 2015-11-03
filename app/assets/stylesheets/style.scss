@@ -57,6 +57,10 @@ h1 {
 	margin-top: 30px;
 }
 
+h2 {
+	text-align: center;
+}
+
 section.video {
 	margin-top: 50px;
 	font-family: 'FunctionBook';
@@ -85,6 +89,7 @@ section.video {
 	article {
 		font-size: $body_font_size;
 		margin-bottom: 20px;
+		text-align: center;
 	}
 
 }
@@ -113,9 +118,10 @@ a {
 		display: inline-block;
 		padding: 20px 0;
 		width: $header_width;
-		text-align: left;;
+		text-align: left;
 		position: fixed;
 		top: 0px;
+		z-index: 1;
 		background-color: $body_background;
 		#bouton_contact {
 			cursor: pointer;
