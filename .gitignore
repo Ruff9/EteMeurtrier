@@ -1,3 +1,3 @@
 tmp/*
 log/*
-config/environments/development.rb
+/public/system/*

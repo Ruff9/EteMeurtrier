@@ -1,8 +1,3 @@
-Le fichier de config development.rb n'est pas sur github, me le demander.
-
-
----------------------------------------------------
-
 
 déploiement git
 
