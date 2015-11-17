@@ -1,8 +1,8 @@
 ---
 ---
 
-$font-path-file-name1: {{ baseurl }}/fonts/TimesNRCondensed;
-$font-path-file-name2: {{ baseurl }}/fonts/FunctionBook;
+$font-path-file-name1: {{ "/fonts/TimesNRCondensed" | prepend: site.baseurl }};
+$font-path-file-name2: {{ "/fonts/FunctionBook" | prepend: site.baseurl }};
 
 @import "variables";
 

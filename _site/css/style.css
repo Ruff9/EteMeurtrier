@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'TimesNRCondensed';
-  src: url(/fonts/TimesNRCondensed.eot?#iefix) format("embedded-opentype"), url(/fonts/TimesNRCondensed.woff) format("woff"), url(/fonts/TimesNRCondensed.ttf) format("truetype"), url(/fonts/TimesNRCondensed.svg#TimesNRCondensed) format("svg");
+  src: url(/EteMeurtrier/fonts/TimesNRCondensed.eot?#iefix) format("embedded-opentype"), url(/EteMeurtrier/fonts/TimesNRCondensed.woff) format("woff"), url(/EteMeurtrier/fonts/TimesNRCondensed.ttf) format("truetype"), url(/EteMeurtrier/fonts/TimesNRCondensed.svg#TimesNRCondensed) format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'FunctionBook';
-  src: url(/fonts/FunctionBook.eot?#iefix) format("embedded-opentype"), url(/fonts/FunctionBook.woff) format("woff"), url(/fonts/FunctionBook.ttf) format("truetype"), url(/fonts/FunctionBook.svg#FunctionBook) format("svg");
+  src: url(/EteMeurtrier/fonts/FunctionBook.eot?#iefix) format("embedded-opentype"), url(/EteMeurtrier/fonts/FunctionBook.woff) format("woff"), url(/EteMeurtrier/fonts/FunctionBook.ttf) format("truetype"), url(/EteMeurtrier/fonts/FunctionBook.svg#FunctionBook) format("svg");
   font-weight: normal;
   font-style: normal; }
 body {
