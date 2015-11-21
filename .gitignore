@@ -1,3 +1,4 @@
 tmp/*
 log/*
 /public/system/*
+.sass-cache
