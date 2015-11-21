@@ -1,6 +1,13 @@
-iterm: pour splitter l'écran: cmd + d
+iterm: 
+	pour splitter l'écran: cmd + d
+	pour aller dans le bon dossier: taper cd Site/Etemeurtrier
 
 adresse du site : http://ruff9.github.io/EteMeurtrier/
+
+pour lancer le serveur local:
+	(dans le bon dossier)
+	jekyll serve
+ adresse dans le navigateur: 	http://0.0.0.0:4000/EteMeurtrier/
 
 déploiement git
 
