@@ -72,12 +72,13 @@ header {
 section.video {
 	margin-top: 50px;
 	font-family: 'FunctionBook';
+	text-align: center;
 
 	.popup_launcher {
 		position: relative;
 
 		img {
-			width: 100%;
+			max-width: 100%;
 		}
 	}
 
@@ -122,16 +123,19 @@ section.video {
 		top: 0px;
 		z-index: 1;
 		background-color: $body_background;
+		
 		#bouton_contact {
 			cursor: pointer;
 			float: right;
 			margin-left: 20px;
 		}
+
 		h1 {
 			float: left;
 			text-align: left;
 			margin-top: 0;
 		}
+
 		p {
 			float: left;
 			padding-left: 70px;
