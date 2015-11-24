@@ -31,7 +31,6 @@ body {
 	color: $font_color;
 }
 
-
 h1 {
 	font-size: 1em;
 	font-weight: inherit;
@@ -97,8 +96,11 @@ section.video {
 		
 #contact {
 	padding: 10px;
-	position: relative;
 	margin-bottom: -90px;
+	padding-top: 75px;
+	text-align: center;
+	background-color: $body_background;
+	display: none;
 }
 
 @media only screen and (min-width: $wrapper_width) {
@@ -135,14 +137,6 @@ section.video {
 			padding-left: 70px;
 			margin: 0;
 		}
-	}
-	
-	#contact {
-		padding: 10px;
-		position: fixed;
-		top: 60px;
-		right: 50px;
-		background-color: $body_background;
 	}
 
 }
