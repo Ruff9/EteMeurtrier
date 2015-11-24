@@ -3,7 +3,7 @@ $(function(){
   	$('#contact').css('display') == 'none' ? $('#contact').show() : $('#contact').hide()
   });
 
-  $('.wrapper').click(function() {
+  $('body').click(function() {
   	$('#contact').hide();
   });
 
