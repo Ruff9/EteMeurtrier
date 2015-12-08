@@ -108,6 +108,14 @@ a {
 	padding-top: 65px;
 }
 
+.thumb {
+	display: none;
+	float: left;
+	width: 200px;
+	position: absolute;
+	// z-index: 5;
+}
+
 header {
 	font-family: 'SimplonBPMono-Light';
 	font-size: $header_font_size;
@@ -123,15 +131,6 @@ section.video {
 	font-family: 'TradeGothicLT-BoldExtended';
 	line-height: 50px;
 	text-align: center;
-
-	.popup_launcher {
-		position: relative;
-
-		img {
-			display:none;
-			max-width: 100%;
-		}
-	}
 
 	.play {
 		text-align: center;

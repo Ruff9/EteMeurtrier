@@ -59,6 +59,12 @@ a {
 .wrapper {
   padding-top: 65px; }
 
+.thumb {
+  display: none;
+  float: left;
+  width: 200px;
+  position: absolute; }
+
 header {
   font-family: 'SimplonBPMono-Light';
   font-size: 13px;
@@ -72,11 +78,6 @@ section.video {
   font-family: 'TradeGothicLT-BoldExtended';
   line-height: 50px;
   text-align: center; }
-  section.video .popup_launcher {
-    position: relative; }
-    section.video .popup_launcher img {
-      display: none;
-      max-width: 100%; }
   section.video .play {
     text-align: center;
     font-size: 13px; }
