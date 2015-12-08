@@ -1,27 +1,64 @@
 ---
 ---
 
-$font-path-file-name1: {{ "/fonts/TimesNRCondensed" | prepend: site.baseurl }};
-$font-path-file-name2: {{ "/fonts/FunctionBook" | prepend: site.baseurl }};
+$font-path-file-name1: {{ "/fonts/LarishNeue" | prepend: site.baseurl }};
+$font-path-file-name2: {{ "/fonts/NewBaskerville-Roman" | prepend: site.baseurl }};
+$font-path-file-name3: {{ "/fonts/NewBaskervilleStd-Italic" | prepend: site.baseurl }};
+$font-path-file-name4: {{ "/fonts/SimplonBPMono-Light" | prepend: site.baseurl }};
+$font-path-file-name5: {{ "/fonts/TradeGothicLT-BoldExtended" | prepend: site.baseurl }};
+
 
 @import "variables";
 
+
+
 @font-face {
-  font-family: 'TimesNRCondensed';
+  font-family: 'LarishNeue';
   src: 	url($font-path-file-name1+'.eot?#iefix') format('embedded-opentype'),  
   			url($font-path-file-name1+'.woff') format('woff'), 
   			url($font-path-file-name1+'.ttf')  format('truetype'), 
-  			url($font-path-file-name1+'.svg#TimesNRCondensed') format('svg');
+  			url($font-path-file-name1+'.svg#LarishNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'NewBaskerville-Roman';
+  src: 	url($font-path-file-name2+'.eot?#iefix') format('embedded-opentype'),
+  			url($font-path-file-name2+'.woff') format('woff'),
+  			url($font-path-file-name2+'.ttf')  format('truetype'),
+  			url($font-path-file-name2+'.svg#NewBaskerville-Roman') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FunctionBook';
-  src: 	url($font-path-file-name2+'.eot?#iefix') format('embedded-opentype'),
-  			url($font-path-file-name2+'.woff') format('woff'),
-  			url($font-path-file-name2+'.ttf')  format('truetype'),
-  			url($font-path-file-name2+'.svg#FunctionBook') format('svg');
+  font-family: 'NewBaskervilleStd-Italic';
+  src: 	url($font-path-file-name3+'.eot?#iefix') format('embedded-opentype'),  
+  			url($font-path-file-name3+'.woff') format('woff'), 
+  			url($font-path-file-name3+'.ttf')  format('truetype'), 
+  			url($font-path-file-name3+'.svg#NewBaskervilleStd-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SimplonBPMono-Light';
+  src: 	url($font-path-file-name4+'.eot?#iefix') format('embedded-opentype'),  
+  			url($font-path-file-name4+'.woff') format('woff'), 
+  			url($font-path-file-name4+'.ttf')  format('truetype'), 
+  			url($font-path-file-name4+'.svg#SimplonBPMono-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothicLT-BoldExtended';
+  src: 	url($font-path-file-name5+'.eot?#iefix') format('embedded-opentype'),  
+  			url($font-path-file-name5+'.woff') format('woff'), 
+  			url($font-path-file-name5+'.ttf')  format('truetype'), 
+  			url($font-path-file-name5+'.svg#SimplonBPMono-Light') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,6 +81,18 @@ h2 {
 	font-size: $titre_film_font_size;
 }
 
+.shadow1 {
+text-shadow: 1px 1px 50x black, 0 0 1em red, 0 0 0.2em red;
+}
+
+.shadow2 {
+text-shadow: 1px 1px 50px black, 0 0 1em red, 0 0 0.2em red;
+}
+
+.shadow3 {
+text-shadow: 1px 1px 50px black, 0 0 1em yellow, 0 0 0.2em grey;
+}
+
 a {
 	text-decoration: none;
 	color: $font_color;
@@ -59,8 +108,16 @@ a {
 	padding-top: 65px;
 }
 
+.thumb {
+	display: none;
+	float: left;
+	width: 200px;
+	position: absolute;
+	// z-index: 5;
+}
+
 header {
-	font-family: 'TimesNRCondensed';
+	font-family: 'SimplonBPMono-Light';
 	font-size: $header_font_size;
 	padding-bottom: 30px;
 	text-align: center;
@@ -70,17 +127,10 @@ header {
 }
 
 section.video {
-	margin-top: 50px;
-	font-family: 'FunctionBook';
+	margin-top: 70px;
+	font-family: 'TradeGothicLT-BoldExtended';
+	line-height: 50px;
 	text-align: center;
-
-	.popup_launcher {
-		position: relative;
-
-		img {
-			max-width: 100%;
-		}
-	}
 
 	.play {
 		text-align: center;
@@ -89,6 +139,10 @@ section.video {
 
 	article {
 		font-size: $description_font_size;
+		font-family: 'SimplonBPMono-Light';
+		line-height: 25px;
+		margin-top: -40px;
+		letter-spacing: 1px;
 		margin-bottom: 20px;
 		text-align: center;
 	}
@@ -98,10 +152,14 @@ section.video {
 #contact {
 	padding: 10px;
 	margin-bottom: -90px;
-	padding-top: 75px;
+	padding-top: 50px;
+	padding-bottom: 75px;
 	text-align: center;
+	font-family: 'SimplonBPMono-Light';
+	font-size:$contact_font_size;;
 	background-color: $body_background;
 	display: none;
+	line-height: 18px;
 }
 
 @media only screen and (min-width: $wrapper_width) {

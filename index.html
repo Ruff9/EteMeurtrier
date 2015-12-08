@@ -7,12 +7,11 @@ layout: default
   {% for post in site.posts %}
 
     <section class="video">
-      <h2>{{ post.title }}</h2>
-
       <a href={{ post.video_url }} class='popup_launcher'>
-        <img src={{site.baseurl}}/images/{{post.img}} >
-        <p class='play'>play</p>
+        <h2>{{ post.title }}</h2>
+        <img src={{site.baseurl}}/images/{{post.img}} class='thumb'>
       </a>
+
 
       <article>
         <p>{{ post.content }}</p>
