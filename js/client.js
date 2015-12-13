@@ -8,40 +8,36 @@ function zone_contact() {
   });
 }
 
-function hide_image(target) {
-  $(document).mousemove(function() {
-    target.css('display', 'none');
-  })
-}
-
 $(function(){
 	zone_contact();
-
   $('.popup_launcher').magnificPopup({type:'iframe'});
 
   $('h2').hover(function(e) {
     $thumb = $(this).siblings('img');
+    // console.log($thumb[0].dataset.shown + ' avant');
 
-    setTimeout(function(){
-      console.log('yo');
-
+    if($thumb[0].dataset.shown == 'false') {
+      
       $thumb.css({
         top:  e.pageY,
         left: e.pageX
       });
 
-    	$thumb.css('display', 'block');
+      $thumb.css('display', 'block');
 
-      if($thumb.css('display') == 'block') {
-        setTimeout(function(){
-          $(document).mousemove(function() {
-            $thumb.css('display', 'none');
-          });
-        }, 200);
-      }
+      setTimeout(function(){
+        $thumb[0].dataset.shown = 'true';
+      }, 100);
+      // console.log($thumb[0].dataset.shown + ' apres');
+    }
 
-      // $('h2').unbind();
-   }, 20);
+    if($thumb[0].dataset.shown == 'true') {
+      $(document).mousemove(function() {
+        $thumb.css('display', 'none');
+      });
+    }
 
   });
 })
+
+
