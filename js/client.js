@@ -9,35 +9,31 @@ function zone_contact() {
 }
 
 $(function(){
+
 	zone_contact();
+
   $('.popup_launcher').magnificPopup({type:'iframe'});
 
-  $('h2').hover(function(e) {
-    $thumb = $(this).siblings('img');
-    // console.log($thumb[0].dataset.shown + ' avant');
+  $('.popup_launcher').hover(function(e) {
 
-    if($thumb[0].dataset.shown == 'false') {
-      
-      $thumb.css({
-        top:  e.pageY,
-        left: e.pageX
-      });
+    $title  = $(this).children('h2');
+    $thumb  = $(this).children('img');
 
-      $thumb.css('display', 'block');
+    var bottom  = $title.offset().top + $title.height();
+    var top     = bottom - $thumb.height();
+    var left    = $title.offset().left + $title.width() + 10;
 
-      setTimeout(function(){
-        $thumb[0].dataset.shown = 'true';
-      }, 100);
-      // console.log($thumb[0].dataset.shown + ' apres');
-    }
+    $thumb.css({
+      top:  top,
+      left: left
+    });
 
-    if($thumb[0].dataset.shown == 'true') {
-      $(document).mousemove(function() {
-        $thumb.css('display', 'none');
-      });
-    }
+    $thumb.css('display', 'block');
+    
+  }, function(e){
+
+    $thumb = $(this).children('img');
+    $thumb.css('display', 'none');
 
   });
 })
-
-
