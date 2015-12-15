@@ -77,21 +77,32 @@ h1 {
 }
 
 h2 {
+	display: inline-block;
 	text-align: center;
 	font-size: $titre_film_font_size;
 }
 
-.shadow1 {
-text-shadow: 1px 1px 50x black, 0 0 1em red, 0 0 0.2em red;
+header {
+	font-family: 'SimplonBPMono-Light';
+	font-size: $header_font_size;
+	padding-bottom: 30px;
+	text-align: center;
+	#bouton_contact {
+		cursor: pointer;
+	}
 }
 
-.shadow2 {
-text-shadow: 1px 1px 50px black, 0 0 1em red, 0 0 0.2em red;
-}
+// .shadow1 {
+// 	text-shadow: 1px 1px 50x black, 0 0 1em red, 0 0 0.2em red;
+// }
 
-.shadow3 {
-text-shadow: 1px 1px 50px black, 0 0 1em yellow, 0 0 0.2em grey;
-}
+// .shadow2 {
+// 	text-shadow: 1px 1px 50px black, 0 0 1em red, 0 0 0.2em red;
+// }
+
+// .shadow3 {
+// 	text-shadow: 1px 1px 50px black, 0 0 1em yellow, 0 0 0.2em grey;
+// }
 
 a {
 	text-decoration: none;
@@ -116,14 +127,9 @@ a {
 	// z-index: 5;
 }
 
-header {
-	font-family: 'SimplonBPMono-Light';
-	font-size: $header_font_size;
-	padding-bottom: 30px;
-	text-align: center;
-	#bouton_contact {
-		cursor: pointer;
-	}
+.popup_launcher {
+	display: block;
+	width: 100%;
 }
 
 section.video {
@@ -138,6 +144,7 @@ section.video {
 	}
 
 	article {
+		display: inline-block;
 		font-size: $description_font_size;
 		font-family: 'SimplonBPMono-Light';
 		line-height: 25px;

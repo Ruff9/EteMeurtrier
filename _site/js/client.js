@@ -8,40 +8,32 @@ function zone_contact() {
   });
 }
 
-function hide_image(target) {
-  $(document).mousemove(function() {
-    target.css('display', 'none');
-  })
-}
-
 $(function(){
+
 	zone_contact();
 
   $('.popup_launcher').magnificPopup({type:'iframe'});
 
-  $('h2').hover(function(e) {
-    $thumb = $(this).siblings('img');
+  $('.popup_launcher').hover(function(e) {
 
-    setTimeout(function(){
-      console.log('yo');
+    $title  = $(this).children('h2');
+    $thumb  = $(this).children('img');
 
-      $thumb.css({
-        top:  e.pageY,
-        left: e.pageX
-      });
+    var bottom  = $title.offset().top + $title.height();
+    var top     = bottom - $thumb.height();
+    var left    = $title.offset().left + $title.width() + 10;
 
-    	$thumb.css('display', 'block');
+    $thumb.css({
+      top:  top,
+      left: left
+    });
 
-      if($thumb.css('display') == 'block') {
-        setTimeout(function(){
-          $(document).mousemove(function() {
-            $thumb.css('display', 'none');
-          });
-        }, 200);
-      }
+    $thumb.css('display', 'block');
+    
+  }, function(e){
 
-      // $('h2').unbind();
-   }, 20);
+    $thumb = $(this).children('img');
+    $thumb.css('display', 'none');
 
   });
 })
