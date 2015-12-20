@@ -7,9 +7,8 @@ layout: default
   {% for post in site.posts %}
 
     <section class="video">
-      <a href={{ post.video_url }} class='popup_launcher'>
+      <a href={{ post.video_url }} class='popup_launcher' data-image={{site.baseurl}}/images/{{post.img}} >
         <h2>{{ post.title }}</h2>
-        <img src={{site.baseurl}}/images/{{post.img}} class='thumb' data-shown='false'>
       </a>
 
       <article>

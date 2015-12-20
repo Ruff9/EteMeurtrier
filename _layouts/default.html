@@ -5,26 +5,29 @@
 
   <body>
 
-    {% include header.html %}
+    <div id="background_general"></div>
 
-    <section id="contact">
-      <p>Eté Meurtrier is launched in 2014</br>by Antonin Mesnil & Lilian Hardouineau.</p>
-      <p>We work for art, music</br>and immersive projects.</p>
-      <p><a href="mailto:hello@etemeurtrier.fr">hello@etemeurtrier.fr</a></p>
-      <BR>
+      {% include header.html %}
+
+      <section id="contact">
+        <p>Eté Meurtrier is launched in 2014</br>by Antonin Mesnil & Lilian Hardouineau.</p>
+        <p>We work for art, music</br>and immersive projects.</p>
+        <p><a href="mailto:hello@etemeurtrier.fr">hello@etemeurtrier.fr</a></p>
         <BR>
-    </section>
+          <BR>
+      </section>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{ "/js/magnific_popup.js" | prepend: site.baseurl }}"></script>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="{{ "/js/magnific_popup.js" | prepend: site.baseurl }}"></script>
 
-    <script src="{{ "/js/client.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/client.js" | prepend: site.baseurl }}"></script>
+
   </body>
 
 </html>
