@@ -16,24 +16,25 @@ $(function(){
 
   $('.popup_launcher').hover(function(e) {
 
-    $title  = $(this).children('h2');
-    $thumb  = $(this).children('img');
+    var $title      = $(this).children('h2');
+    var $image      = $(this).children('img');
+    var $background = $('#background_general');
+    var $header     = $('header');
 
-    var bottom  = $title.offset().top + $title.height();
-    var top     = bottom - $thumb.height();
-    var left    = $title.offset().left + $title.width() + 10;
+    var height = window.outerHeight;
 
-    $thumb.css({
-      top:  top,
-      left: left
+    $background.css({
+      'background-image': 'url(' + this.dataset.image + ')',
+      'height': height
     });
 
-    $thumb.css('display', 'block');
+    $header.css('background-color', 'transparent');
     
   }, function(e){
-
-    $thumb = $(this).children('img');
-    $thumb.css('display', 'none');
-
+    var $background = $('#background_general');
+    var $header     = $('header');
+    
+    $background.css('background-image', 'none');
+    $header.css('background-color', 'black');
   });
 })
