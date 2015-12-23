@@ -87,7 +87,8 @@ a {
   padding: 40px 0;
   display: block;
   width: 100%;
-  cursor: default; }
+  cursor: default;
+  outline: none; }
 
 section.video {
   margin-top: 70px;
