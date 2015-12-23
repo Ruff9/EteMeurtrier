@@ -1,15 +1,13 @@
 ---
 ---
+@import "variables";
+
 
 $font-path-file-name1: {{ "/fonts/LarishNeue" | prepend: site.baseurl }};
 $font-path-file-name2: {{ "/fonts/NewBaskerville-Roman" | prepend: site.baseurl }};
 $font-path-file-name3: {{ "/fonts/NewBaskervilleStd-Italic" | prepend: site.baseurl }};
 $font-path-file-name4: {{ "/fonts/SimplonBPMono-Light" | prepend: site.baseurl }};
 $font-path-file-name5: {{ "/fonts/TradeGothicLT-BoldExtended" | prepend: site.baseurl }};
-
-
-@import "variables";
-
 
 
 @font-face {
@@ -21,7 +19,6 @@ $font-path-file-name5: {{ "/fonts/TradeGothicLT-BoldExtended" | prepend: site.ba
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: 'NewBaskerville-Roman';
@@ -63,6 +60,7 @@ $font-path-file-name5: {{ "/fonts/TradeGothicLT-BoldExtended" | prepend: site.ba
   font-style: normal;
 }
 
+
 body {
 	background-color: $body_background;
 	color: $font_color;
@@ -97,18 +95,19 @@ h2 {
 	display: inline-block;
 	text-align: center;
 	font-size: $titre_film_font_size;
+	margin: 0;
+	cursor: pointer;
 }
 
 header {
+	background-color: $body_background;
 	font-family: 'SimplonBPMono-Light';
 	font-size: $header_font_size;
 	padding-bottom: 30px;
 	text-align: center;
-	background-color: $body_background;
-	#bouton_contact {
-		cursor: pointer;
-	}
 }
+
+#bouton_contact { cursor: pointer; }
 
 a {
 	text-decoration: none;
@@ -133,8 +132,10 @@ a {
 }
 
 .popup_launcher {
+	padding: 40px 0;
 	display: block;
 	width: 100%;
+	cursor: default;
 }
 
 section.video {
@@ -169,7 +170,6 @@ section.video {
 	text-align: center;
 	font-family: 'SimplonBPMono-Light';
 	font-size:$contact_font_size;;
-	background-color: $body_background;
 	display: none;
 	line-height: 18px;
 }
@@ -193,18 +193,6 @@ section.video {
 		top: 0px;
 		z-index: 1;
 		
-		#bouton_contact {
-			cursor: pointer;
-			float: right;
-			margin-left: 20px;
-		}
-
-		h1 {
-			float: left;
-			text-align: left;
-			margin-top: 0;
-		}
-
 		p {
 			float: left;
 			padding-left: 70px;
@@ -212,4 +200,14 @@ section.video {
 		}
 	}
 
+	#bouton_contact {
+		float: right;
+		margin-left: 20px;
+	}
+
+	h1 {
+		float: left;
+		text-align: left;
+		margin-top: 0;
+	}
 }
