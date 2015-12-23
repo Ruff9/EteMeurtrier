@@ -51,16 +51,19 @@ h1 {
 h2 {
   display: inline-block;
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px;
+  margin: 0;
+  cursor: pointer; }
 
 header {
+  background-color: black;
   font-family: 'SimplonBPMono-Light';
   font-size: 13px;
   padding-bottom: 30px;
-  text-align: center;
-  background-color: black; }
-  header #bouton_contact {
-    cursor: pointer; }
+  text-align: center; }
+
+#bouton_contact {
+  cursor: pointer; }
 
 a {
   text-decoration: none;
@@ -81,8 +84,10 @@ a {
   position: absolute; }
 
 .popup_launcher {
+  padding: 40px 0;
   display: block;
-  width: 100%; }
+  width: 100%;
+  cursor: default; }
 
 section.video {
   margin-top: 70px;
@@ -110,7 +115,6 @@ section.video {
   text-align: center;
   font-family: 'SimplonBPMono-Light';
   font-size: 13px;
-  background-color: black;
   display: none;
   line-height: 18px; }
 
@@ -126,15 +130,16 @@ section.video {
     position: fixed;
     top: 0px;
     z-index: 1; }
-    header #bouton_contact {
-      cursor: pointer;
-      float: right;
-      margin-left: 20px; }
-    header h1 {
-      float: left;
-      text-align: left;
-      margin-top: 0; }
     header p {
       float: left;
       padding-left: 70px;
-      margin: 0; } }
+      margin: 0; }
+
+  #bouton_contact {
+    float: right;
+    margin-left: 20px; }
+
+  h1 {
+    float: left;
+    text-align: left;
+    margin-top: 0; } }

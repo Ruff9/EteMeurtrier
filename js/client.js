@@ -1,11 +1,16 @@
-function zone_contact() {	
+function zone_contact() {
+
+  $contact = $('#contact');
+
   $('#bouton_contact').click(function() {
-  	$('#contact').css('display') == 'none' ? $('#contact').show() : $('#contact').hide()
+  	$contact.css('display') == 'none' ? $contact.show() : $contact.hide();
   });
 
   $('.wrapper').click(function() {
-  	$('#contact').hide();
+  	$contact.hide();
   });
+
+  return null;
 }
 
 $(function(){
@@ -14,27 +19,22 @@ $(function(){
 
   $('.popup_launcher').magnificPopup({type:'iframe'});
 
-  $('.popup_launcher').hover(function(e) {
+  var $background = $('#background_general');
+  var $header     = $('header');
 
-    var $title      = $(this).children('h2');
-    var $image      = $(this).children('img');
-    var $background = $('#background_general');
-    var $header     = $('header');
-
-    var height = window.outerHeight;
+  $('h2').hover(function() {
 
     $background.css({
       'background-image': 'url(' + this.dataset.image + ')',
-      'height': height
+      'height': window.outerHeight
     });
 
     $header.css('background-color', 'transparent');
     
-  }, function(e){
-    var $background = $('#background_general');
-    var $header     = $('header');
-    
+  }, function(){
+
     $background.css('background-image', 'none');
     $header.css('background-color', 'black');
+
   });
 })
