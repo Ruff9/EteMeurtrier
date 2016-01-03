@@ -109,6 +109,17 @@ header {
 
 #bouton_contact { cursor: pointer; }
 
+.logo-fb, .logo-vimeo {
+	width: 25px;
+	margin-top: 20px;
+}
+
+.logo-vimeo {
+	margin-left: 10px;
+	position: relative;
+	top: 2px;
+} 
+
 a {
 	text-decoration: none;
 	color: $font_color;
@@ -179,10 +190,6 @@ section.video {
 
 	.container {
 		width: $wrapper_width;
-	}
-
-	.header-wrapper {
-		// TODO
 	}
 
 	header {
