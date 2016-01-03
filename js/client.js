@@ -1,23 +1,20 @@
-function zone_contact() {
+function zoneContact() {
 
   $contact = $('#contact');
 
   $('#bouton_contact').click(function() {
   	$contact.css('display') == 'none' ? $contact.show() : $contact.hide();
+    // return null;
   });
 
   $('.wrapper').click(function() {
-  	$contact.hide();
+    $contact.hide();
+    // return null;
   });
 
-  return null;
 }
 
-$(function(){
-
-	zone_contact();
-
-  $('.popup_launcher').magnificPopup({type:'iframe'});
+function imageBackground() {
 
   var $background = $('#background_general');
   var $header     = $('header');
@@ -37,4 +34,13 @@ $(function(){
     $header.css('background-color', 'black');
 
   });
+}
+
+$(function(){
+
+	zoneContact();
+  imageBackground();
+
+  $('.popup_launcher').magnificPopup({type:'iframe'});
+
 })
