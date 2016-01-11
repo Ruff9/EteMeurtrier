@@ -2,14 +2,14 @@ function zoneContact() {
 
   $contact = $('#contact');
 
-  $('#bouton_contact').click(function() {
+  $('#bouton_contact').click(function(e) {
+  	e.preventDefault();
   	$contact.css('display') == 'none' ? $contact.show() : $contact.hide();
-    // return null;
   });
 
-  $('.wrapper').click(function() {
+  $('.wrapper').click(function(e) {
+    e.preventDefault();
     $contact.hide();
-    // return null;
   });
 
 }
