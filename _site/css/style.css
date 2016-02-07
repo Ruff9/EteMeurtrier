@@ -44,6 +44,10 @@ h2 {
   margin: 0;
   cursor: pointer; }
 
+.duration {
+  font-size: 18px;
+  margin-top: -10px; }
+
 header {
   background-color: black;
   font-family: 'SimplonBPMono-Light';
