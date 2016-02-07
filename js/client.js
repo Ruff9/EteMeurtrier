@@ -14,6 +14,12 @@ function zoneContact() {
 
 }
 
+function preload() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
 function imageBackground() {
 
   var $background = $('#background_general');
@@ -38,7 +44,8 @@ function imageBackground() {
 
 $(function(){
 
-	zoneContact();
+  preload('/images/faceA.png', '/images/faceB.png', '/images/indiens.png', '/images/isolee.png','/images/splendor.png');
+  zoneContact();
   imageBackground();
 
   $('.popup_launcher').magnificPopup({type:'iframe'});

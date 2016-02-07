@@ -2,16 +2,22 @@ function zoneContact() {
 
   $contact = $('#contact');
 
-  $('#bouton_contact').click(function() {
+  $('#bouton_contact').click(function(e) {
+  	e.preventDefault();
   	$contact.css('display') == 'none' ? $contact.show() : $contact.hide();
-    // return null;
   });
 
-  $('.wrapper').click(function() {
+  $('.wrapper').click(function(e) {
+    e.preventDefault();
     $contact.hide();
-    // return null;
   });
 
+}
+
+function preload() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
 }
 
 function imageBackground() {
@@ -38,7 +44,8 @@ function imageBackground() {
 
 $(function(){
 
-	zoneContact();
+  preload('/images/faceA.png', '/images/faceB.png', '/images/indiens.png', '/images/isolee.png','/images/splendor.png');
+  zoneContact();
   imageBackground();
 
   $('.popup_launcher').magnificPopup({type:'iframe'});

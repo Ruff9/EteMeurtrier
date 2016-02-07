@@ -32,6 +32,16 @@ body {
 	color: $font_color;
 }
 
+body:after{
+    display:none;
+    content:
+	    url(/images/faceA.png)
+	    url(/images/faceB.png)
+	    url(/images/indiens.png)
+	    url(/images/isolee.png)
+	    url(/images/splendor.png)
+}
+
 #background_general {
 	width: 100%;
 	position: fixed;
