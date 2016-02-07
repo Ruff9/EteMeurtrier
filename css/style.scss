@@ -85,7 +85,7 @@ header {
 
 #bouton_contact { cursor: pointer; }
 
-.logo-fb, .logo-vimeo {
+.logo-fb, .logo-vimeo, .logo-instagram {
 	width: 20px;
 	margin-top: 20px;
 }
@@ -94,7 +94,13 @@ header {
 	margin-left: 10px;
 	position: relative;
 	top: 2px;
-} 
+}
+
+.logo-instagram {
+	margin-left: 12px;
+	position: relative;
+	top: 1px;
+}
 
 a {
 	text-decoration: none;
