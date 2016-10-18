@@ -8,9 +8,9 @@ $font-path-file-name2: {{ "/fonts/EurostileLTStd-BoldEx2" | prepend: site.baseur
 
 @font-face {
   font-family: 'SimplonBPMono-Light';
-  src: 	url($font-path-file-name1+'.eot?#iefix') format('embedded-opentype'),  
-  			url($font-path-file-name1+'.woff') format('woff'), 
-  			url($font-path-file-name1+'.ttf')  format('truetype'), 
+  src: 	url($font-path-file-name1+'.eot?#iefix') format('embedded-opentype'),
+  			url($font-path-file-name1+'.woff') format('woff'),
+  			url($font-path-file-name1+'.ttf')  format('truetype'),
   			url($font-path-file-name1+'.svg#SimplonBPMono-Light') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -18,9 +18,9 @@ $font-path-file-name2: {{ "/fonts/EurostileLTStd-BoldEx2" | prepend: site.baseur
 
 @font-face {
   font-family: 'EurostileLTStd-BoldEx2';
-  src: 	url($font-path-file-name2+'.eot?#iefix') format('embedded-opentype'),  
-  			url($font-path-file-name2+'.woff') format('woff'), 
-  			url($font-path-file-name2+'.ttf')  format('truetype'), 
+  src: 	url($font-path-file-name2+'.eot?#iefix') format('embedded-opentype'),
+  			url($font-path-file-name2+'.woff') format('woff'),
+  			url($font-path-file-name2+'.ttf')  format('truetype'),
   			url($font-path-file-name2+'.svg#SimplonBPMono-Light') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -70,7 +70,7 @@ h1 {
 h2 {
 	display: inline-block;
 	text-align: center;
-	font-size: $titre_film_font_size;
+	font-size: 20px;
 	margin: 0;
 	cursor: pointer;
 }
@@ -117,7 +117,7 @@ a {
 	margin: auto;
 	z-index:1;
 }
-	
+
 .wrapper {
 	padding-top: 65px;
 }
@@ -161,7 +161,7 @@ section.video {
 	}
 
 }
-		
+
 #contact {
 	padding: 10px;
 	margin-bottom: -90px;
@@ -191,7 +191,15 @@ section.video {
 	font-size: 13px;
 }
 
+@media all and (min-width: 555px) {
+	h2 { font-size: 34px; }
+}
+
 @media only screen and (min-width: $wrapper_width) {
+
+	h2 {
+		font-size: $titre_film_font_size;
+	}
 
 	.container {
 		width: $wrapper_width;
@@ -210,7 +218,7 @@ section.video {
 		position: fixed;
 		top: 0px;
 		z-index: 1;
-		
+
 		p {
 			float: left;
 			padding-left: 70px;
