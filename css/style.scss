@@ -73,6 +73,7 @@ h2 {
 	font-size: 20px;
 	margin: 0;
 	cursor: pointer;
+	line-height: 30px;
 }
 
 .duration {
@@ -191,8 +192,11 @@ section.video {
 	font-size: 13px;
 }
 
-@media all and (min-width: 555px) {
-	h2 { font-size: 34px; }
+@media only screen and (min-width: 555px) {
+	h2 {
+		font-size: 34px;
+		line-height: initial;
+	}
 }
 
 @media only screen and (min-width: $wrapper_width) {
