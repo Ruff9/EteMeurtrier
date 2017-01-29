@@ -175,10 +175,10 @@ section.video {
     text-align: center; }
 
   .about-container {
-    width: 18%;
+    width: 17%;
     text-align: right; } }
 @media only screen and (min-width: 1100px) {
-  .wrapper {
+  .wrapper, #contact {
     padding-top: 95px; }
 
   h2 {
