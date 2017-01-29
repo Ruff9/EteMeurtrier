@@ -32,12 +32,10 @@ function imageBackground() {
       'height': window.outerHeight
     });
 
-    $header.css('background-color', 'transparent');
-    
+
   }, function(){
 
     $background.css('background-image', 'none');
-    $header.css('background-color', 'black');
 
   });
 }
