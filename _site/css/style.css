@@ -56,6 +56,10 @@ header {
   padding-bottom: 30px;
   text-align: center; }
 
+.main-logo {
+  height: 45px;
+  margin: 20px 0; }
+
 #bouton_contact {
   cursor: pointer; }
 
@@ -145,10 +149,41 @@ section.video {
 @media only screen and (min-width: 555px) {
   h2 {
     font-size: 34px;
-    line-height: initial; } }
+    line-height: initial; }
+
+  .main-logo {
+    margin: 0;
+    margin-top: 10px; }
+
+  .title-container, .logo-container, .about-container {
+    display: inline-block; }
+
+  .title-container, .about-container {
+    height: 20px;
+    position: relative;
+    top: -25px; }
+
+  .title-container {
+    width: 20%;
+    text-align: left; }
+    .title-container h1 {
+      text-align: left;
+      margin: 0; }
+
+  .logo-container {
+    width: 60%;
+    text-align: center; }
+
+  .about-container {
+    width: 18%;
+    text-align: right; } }
 @media only screen and (min-width: 1100px) {
+  .wrapper {
+    padding-top: 95px; }
+
   h2 {
-    font-size: 50px; }
+    font-size: 55px;
+    line-height: 60px; }
 
   .container {
     width: 1100px; }
@@ -173,9 +208,4 @@ section.video {
   #bouton_contact {
     float: right;
     margin-left: 20px;
-    background-color: none; }
-
-  h1 {
-    float: left;
-    text-align: left;
-    margin-top: 0; } }
+    background-color: none; } }
