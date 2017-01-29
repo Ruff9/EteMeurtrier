@@ -89,6 +89,11 @@ header {
 	text-align: center;
 }
 
+.main-logo {
+	height: 45px;
+	margin: 20px 0;
+}
+
 #bouton_contact { cursor: pointer; }
 
 .logo-fb, .logo-vimeo, .logo-instagram {
@@ -193,16 +198,57 @@ section.video {
 }
 
 @media only screen and (min-width: 555px) {
+
 	h2 {
 		font-size: 34px;
 		line-height: initial;
+	}
+
+	.main-logo {
+		margin: 0;
+		margin-top: 10px;
+	}
+
+	.title-container, .logo-container, .about-container {
+		display: inline-block;
+	}
+
+	.title-container, .about-container {
+		height: 20px;
+		position: relative;
+		top: -25px;
+	}
+
+	.title-container {
+		width: 20%;
+		text-align: left;
+
+		h1 {
+			text-align: left;
+			margin: 0;
+		}
+	}
+
+	.logo-container {
+		width: 60%;
+		text-align: center;
+	}
+
+	.about-container {
+		width: 18%;
+		text-align: right;
 	}
 }
 
 @media only screen and (min-width: $wrapper_width) {
 
+	.wrapper {
+		padding-top: 95px;
+	}
+
 	h2 {
 		font-size: $titre_film_font_size;
+    line-height: 60px;
 	}
 
 	.container {
@@ -234,11 +280,5 @@ section.video {
 		float: right;
 		margin-left: 20px;
 		background-color: none;
-	}
-
-	h1 {
-		float: left;
-		text-align: left;
-		margin-top: 0;
 	}
 }
