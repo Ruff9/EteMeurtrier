@@ -13,7 +13,7 @@ description: 'Eté Meurtrier is launched in 2014 by Antonin Mesnil & Lilian Hard
   We work for art, music and immersive projects.
 
 '
-baseurl: ''
+baseurl: 
 url: http://ruff9.github.io
 github_username: jekyll
 markdown: kramdown
