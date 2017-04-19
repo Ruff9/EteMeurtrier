@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="home">
-  
+
   {% for post in site.posts %}
 
     <section class="video">
 
       <a href={{ post.video_url }} class='popup_launcher' >
-        <h2 data-image={{site.baseurl}}/images/{{post.img}}>
+        <h2 data-image={{site.baseurl}}/{{post.img}}>
           {{ post.title }}
         </h2>
         <div class='duration'>{{ post.duration }}</div>
@@ -20,7 +20,7 @@ layout: default
       </article>
 
     </section>
-    
+
   {% endfor %}
 
 </div>

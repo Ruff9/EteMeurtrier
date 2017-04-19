@@ -33,7 +33,7 @@ function imageBackground() {
     });
 
     $header.css('background-color', 'transparent');
-    
+
   }, function(){
 
     $background.css('background-image', 'none');
@@ -44,7 +44,7 @@ function imageBackground() {
 
 $(function(){
 
-  preload('/images/faceA.png', '/images/faceB.png', '/images/indiens.png', '/images/isolee.png','/images/splendor.png');
+  preload('/POINT_ZERO.jpg', '/faceA.png', '/faceB.png', '/indiens.png', '/isolee.png','/splendor.png');
   zoneContact();
   imageBackground();
 
