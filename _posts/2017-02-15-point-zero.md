@@ -1,7 +1,7 @@
 ---
-title:  CORIN<br/>"POINT ZERO"
+title: CORIN<br/>"POINT ZERO"
+date: 2017-02-15 17:50:58 Z
 duration: '1:22'
-date:   2017-02-15 18:50:58 +0100
 video_url: https://vimeo.com/213510315/4a08f450d4
 img: POINT_ZERO.jpg
 ---
