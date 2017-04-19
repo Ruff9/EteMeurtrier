@@ -12,8 +12,8 @@ email: etemeurtrier@contact.fr
 description: 'Eté Meurtrier is launched in 2014 by Antonin Mesnil & Lilian Hardouineau.
   We work for art, music and immersive projects.
 
-
 baseurl: ''
+
 url: http://ruff9.github.io
 github_username: jekyll
 markdown: kramdown
