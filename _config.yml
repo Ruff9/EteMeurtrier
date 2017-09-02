@@ -19,5 +19,3 @@ baseurl: ''
 url: http://ruff9.github.io
 github_username: Ruff9
 markdown: kramdown
-gems:
-- jekyll-admin
