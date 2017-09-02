@@ -7,6 +7,5 @@ img: DESSIN_ANIME.jpg
 ---
 
 Music : ‘Dessin Animé’ by Zuukou Mayzie (prod. Flemondat) / from ‘Disneyland’ EP / Assistant set decorator : Seyf El Haouech
-
 <BR>
   <BR><BR>
