@@ -1,5 +1,4 @@
 function zoneContact() {
-
   $contact = $('#contact');
 
   $('#bouton_contact').click(function(e) {
@@ -11,7 +10,6 @@ function zoneContact() {
     e.preventDefault();
     $contact.hide();
   });
-
 }
 
 function preload() {
@@ -21,33 +19,26 @@ function preload() {
 }
 
 function imageBackground() {
-
   var $background = $('#background_general');
   var $header     = $('header');
 
   $('h2').hover(function() {
-
     $background.css({
       'background-image': 'url(' + this.dataset.image + ')',
       'height': window.outerHeight
     });
 
     $header.css('background-color', 'transparent');
-
   }, function(){
-
     $background.css('background-image', 'none');
     $header.css('background-color', 'black');
-
   });
 }
 
 $(function(){
-
   preload('/POINT_ZERO.jpg', '/faceA.png', '/faceB.png', '/indiens.png', '/isolee.png','/splendor.png');
   zoneContact();
   imageBackground();
 
   $('.popup_launcher').magnificPopup({type:'iframe'});
-
 })
