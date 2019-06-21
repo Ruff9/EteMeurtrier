@@ -5,7 +5,8 @@
 
 
 $font-path-file-name1: {{ "/fonts/SimplonBPMono-Light" | prepend: site.baseurl }};
-$font-path-file-name2: {{ "/fonts/EurostileLTStd-BoldEx2" | prepend: site.baseurl }};
+// $font-path-file-name2: {{ "/fonts/EurostileLTStd-BoldEx2" | prepend: site.baseurl }};
+$font-path-file-name2: {{ "/fonts/DrukWide-HeavyItalic" | prepend: site.baseurl }};
 
 @font-face {
   font-family: 'SimplonBPMono-Light';
@@ -17,12 +18,22 @@ $font-path-file-name2: {{ "/fonts/EurostileLTStd-BoldEx2" | prepend: site.baseur
   font-style: normal;
 }
 
+// @font-face {
+//   font-family: 'EurostileLTStd-BoldEx2';
+//   src: 	url($font-path-file-name2+'.eot?#iefix') format('embedded-opentype'),
+//   			url($font-path-file-name2+'.woff') format('woff'),
+//   			url($font-path-file-name2+'.ttf')  format('truetype'),
+//   			url($font-path-file-name2+'.svg#EurostileLTStd-BoldEx2') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 @font-face {
-  font-family: 'EurostileLTStd-BoldEx2';
+  font-family: 'DrukWide-HeavyItalic';
   src: 	url($font-path-file-name2+'.eot?#iefix') format('embedded-opentype'),
   			url($font-path-file-name2+'.woff') format('woff'),
   			url($font-path-file-name2+'.ttf')  format('truetype'),
-  			url($font-path-file-name2+'.svg#SimplonBPMono-Light') format('svg');
+  			url($font-path-file-name2+'.svg#EurostileLTStd-BoldEx2') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -145,7 +156,7 @@ a {
 
 section.video {
 	margin-top: 22px;
-	font-family: 'EurostileLTStd-BoldEx2';
+	font-family: 'DrukWide-HeavyItalic';
 	line-height: 50px;
 	text-align: center;
 	letter-spacing: 1px;
