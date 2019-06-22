@@ -145,10 +145,16 @@ section.video {
   text-align: right;
   font-size: 13px; }
 
+.about-container {
+  margin-top: 25px; }
+
 @media only screen and (min-width: 555px) {
   h2 {
     font-size: 34px;
     line-height: initial; }
+
+  .duration {
+    font-size: 22px; }
 
   .main-logo {
     margin: 0;
@@ -156,11 +162,6 @@ section.video {
 
   .title-container, .logo-container, .about-container {
     display: inline-block; }
-
-  .title-container, .about-container {
-    height: 20px;
-    position: relative;
-    top: -25px; }
 
   .title-container {
     width: 20%;
@@ -174,6 +175,7 @@ section.video {
     text-align: center; }
 
   .about-container {
+    margin-top: 0;
     width: 17%;
     text-align: right; } }
 @media only screen and (min-width: 1100px) {
